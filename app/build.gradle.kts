@@ -1,11 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-<<<<<<< HEAD
-=======
     alias(libs.plugins.kotlin.compose) // подключаем плагин через alias
 
->>>>>>> c68c2041f628ac64f5685efdb7367cd87119a351
 }
 
 android {
@@ -32,10 +29,7 @@ android {
         }
     }
     compileOptions {
-<<<<<<< HEAD
-=======
 
->>>>>>> c68c2041f628ac64f5685efdb7367cd87119a351
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
@@ -44,27 +38,18 @@ android {
     }
     buildFeatures {
         viewBinding = true
-<<<<<<< HEAD
-=======
         compose = true
 
     }
 
     composeOptions {
         kotlinCompilerExtensionVersion = "2.0.0" // Убедись, что версия совпадает с плагином
->>>>>>> c68c2041f628ac64f5685efdb7367cd87119a351
     }
 }
 
 dependencies {
-<<<<<<< HEAD
-    implementation(libs.kotlin.stdlib)
-    implementation(libs.kotlinx.coroutines.core)
-    implementation(libs.kotlinx.coroutines.android)
     implementation(libs.mlkit.translate)
     implementation(libs.coroutines.play.services)
-    implementation(libs.jsoup)
-=======
 
     implementation(libs.compose.ui)
     implementation(libs.compose.ui.tooling)
@@ -74,11 +59,9 @@ dependencies {
     implementation(libs.compose.material.icons.extended)
     implementation(libs.compose.runtime.livedata)
 
-
     implementation(libs.kotlin.stdlib)
     implementation(libs.kotlinx.coroutines.core)
     implementation(libs.kotlinx.coroutines.android)
->>>>>>> c68c2041f628ac64f5685efdb7367cd87119a351
 
     implementation(libs.lifecycle.viewmodel.ktx)
     implementation(libs.lifecycle.livedata.ktx)
@@ -91,10 +74,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-<<<<<<< HEAD
-=======
     implementation(libs.androidx.ui.android)
->>>>>>> c68c2041f628ac64f5685efdb7367cd87119a351
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

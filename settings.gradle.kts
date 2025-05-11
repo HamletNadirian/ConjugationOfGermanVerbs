@@ -9,10 +9,7 @@ pluginManagement {
         }
         mavenCentral()
         gradlePluginPortal()
-<<<<<<< HEAD
-=======
 
->>>>>>> c68c2041f628ac64f5685efdb7367cd87119a351
     }
 }
 dependencyResolutionManagement {

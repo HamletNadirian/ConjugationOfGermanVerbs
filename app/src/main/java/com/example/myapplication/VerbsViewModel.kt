@@ -5,7 +5,6 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-<<<<<<< HEAD
 import com.google.mlkit.nl.translate.TranslateLanguage
 import com.google.mlkit.nl.translate.Translation
 import com.google.mlkit.nl.translate.TranslatorOptions
@@ -63,7 +62,6 @@ class VerbsViewModel : ViewModel() {
             }
         }
     }
-
     suspend fun translateVerb(verb: String): String {
         return try {
             val options = TranslatorOptions.Builder()
@@ -83,52 +81,5 @@ class VerbsViewModel : ViewModel() {
             Log.e("ViewModel", errorMsg, e)
             errorMsg
         }
-=======
-import kotlinx.coroutines.launch
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
-
-class VerbsViewModel : ViewModel() {
-    private var _verbMap = MutableLiveData<Map<String, TenseData>>()
-
-    private val _error = MutableLiveData<String>()
-    val error: LiveData<String> get() = _error
-    val verMap: LiveData<Map<String, TenseData>> get() = _verbMap
-    val inProgress = MutableLiveData(false)
-
-    fun loadVerbs(verb: String) {
-        inProgress.value = true
-
-        Log.d("ViewModel", "loadVerbs вызван с: $verb")
-
-        viewModelScope.launch {
-            try {
-             /*   val api = Retrofit.Builder()
-                    .baseUrl("https://german-verbs-api.onrender.com/")
-                    .addConverterFactory(GsonConverterFactory.create())
-                    .build()
-                    .create(ConjugationApi::class.java)*/
-                val api = RetrofitInstance.dictionaryApi
-                val response = api.getVerbInfo(verb)
-
-                if (response.isSuccessful && response.body() != null) {
-                    _verbMap.value = response.body()!!.data
-                    Log.d("ViewModel", "Получено ${response.body()!!.data.size} времен")
-                    inProgress.value = false
-
-                }
-                else {
-                    _error.value = "Ошибка загрузки данных: ${response.code()}"
-                    inProgress.value = false
-
-                }
-            } catch (e: Exception) {
-                _error.value = "Ошибка: ${e.message}"
-                Log.e("ViewModel", "Ошибка: ${e.message}")
-
-            }
-        }
-
->>>>>>> c68c2041f628ac64f5685efdb7367cd87119a351
     }
 }

@@ -1,29 +1,11 @@
 package com.example.myapplication
 
-<<<<<<< HEAD
 import android.text.Html
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.databinding.VerbsRecyclerBinding
 
-=======
-import android.graphics.Color
-import android.graphics.Typeface
-import android.text.Html
-import android.text.SpannableString
-import android.text.Spanned
-import android.text.style.ForegroundColorSpan
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.widget.TextView
-import androidx.recyclerview.widget.RecyclerView
-import com.example.myapplication.databinding.VerbsRecyclerBinding
-
-import android.text.style.StyleSpan
-
->>>>>>> c68c2041f628ac64f5685efdb7367cd87119a351
 class VerbsAdapter(private var verbsList: Map<String, TenseData>) :
     RecyclerView.Adapter<VerbsAdapter.VerbsViewHolder>() {
     class VerbsViewHolder(private val binding: VerbsRecyclerBinding) :
@@ -32,17 +14,10 @@ class VerbsAdapter(private var verbsList: Map<String, TenseData>) :
         private fun format(
             pronoun: String,
             forms: List<String>,
-<<<<<<< HEAD
             color: String = "#1565C0"  // Используем синий цвет по умолчанию
         ): CharSequence {
             val coloredForms = forms.joinToString("  ") { "<font color='$color'>$it</font>" }
             return Html.fromHtml("<b>$pronoun</b> $coloredForms", Html.FROM_HTML_MODE_LEGACY)
-=======
-            color: String = "#00"
-        ): CharSequence {
-            val coloredForms = forms.joinToString("  ") { "<font color='$color'>$it</font>" }
-            return Html.fromHtml("$pronoun $coloredForms", Html.FROM_HTML_MODE_LEGACY)
->>>>>>> c68c2041f628ac64f5685efdb7367cd87119a351
         }
 
         fun bind(data: Map.Entry<String, TenseData>) {
