@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ich">ich</string>
+    <string name="du">du</string>
+    <string name="er_sie_es">er/sie/es</string>
+</resources>
