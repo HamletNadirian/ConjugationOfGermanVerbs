@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <resources>
+=======
+<resources xmlns:tools="http://schemas.android.com/tools">
+>>>>>>> c68c2041f628ac64f5685efdb7367cd87119a351
     <!-- Base application theme. -->
     <style name="Base.Theme.MyApplication" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->

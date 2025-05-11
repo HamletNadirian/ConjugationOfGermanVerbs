@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
+<<<<<<< HEAD
     <corners android:radius="24dp" />
     <stroke
         android:width="1dip"
         android:color="@color/grey" />
+=======
+    <corners android:radius="24dp"/>
+    <stroke android:width="1dip" android:color="@color/grey"/>
+>>>>>>> c68c2041f628ac64f5685efdb7367cd87119a351
 
 </shape>

@@ -1,11 +1,22 @@
 package com.example.myapplication
 
+<<<<<<< HEAD
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
 import org.junit.Assert.assertEquals
 import org.junit.Test
 import org.junit.runner.RunWith
 
+=======
+import androidx.test.platform.app.InstrumentationRegistry
+import androidx.test.ext.junit.runners.AndroidJUnit4
+
+import org.junit.Test
+import org.junit.runner.RunWith
+
+import org.junit.Assert.*
+
+>>>>>>> c68c2041f628ac64f5685efdb7367cd87119a351
 /**
  * Instrumented test, which will execute on an Android device.
  *

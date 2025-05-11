@@ -1,5 +1,8 @@
 package com.example.myapplication
+<<<<<<< HEAD
 
+=======
+>>>>>>> c68c2041f628ac64f5685efdb7367cd87119a351
 data class ConjugationResponse(
     val success: Boolean,
     val data: Map<String, TenseData>
