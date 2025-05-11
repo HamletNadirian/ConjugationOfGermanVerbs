@@ -17,6 +17,3 @@ Google ML Kit for translation
 RecyclerView for list display
 LiveData for reactive UI updates
 ![photo_2025-05-11_21-38-01](https://github.com/user-attachments/assets/1a02889b-93db-4605-875b-44afe1171b52)
-
-
-</div>
